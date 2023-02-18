@@ -30,8 +30,16 @@
   <body>
     
 <!-- Progress bar when scrolling the page -->
+<div class="progress">
 <div class="progress-bar" id="progressBar"></div>
+</div>
 <style type="text/css">
+.progress {
+    position: fixed;
+    height: 4px;
+    width: 100%;
+    background: silver;
+}
 .progress-bar {
     position: fixed;
     left: 0;
@@ -52,7 +60,7 @@ function progressBar() {
 
 window.addEventListener('scroll', progressBar);
 </script>
-<!-- Progress bar when scrolling the page -->  
+<!-- Progress bar when scrolling the page -->   
     
     <header role="banner" class="ui-section-header">
       <div class="ui-layout-container">
